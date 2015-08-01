@@ -1,0 +1,180 @@
+{
+	"imageViewer" : {
+		"tooltip" : {
+			"play" : "Play",
+			"pause" : "Pause",
+			"options" : "Options"
+		},
+		"menuItem" : {
+			"slideshowSpeed" : {
+				"title" : "SlideShow Speed",
+				"options" : {
+					"slow" : "Slow",
+					"normal" : "Normal",
+					"fast" : "Fast"
+				}
+			},
+			"slideshowEffect" : {
+				"title" : "Slideshow Effect",
+				"options" : {
+					"cornerWipe" : "Corner Wipe",
+					"fadeInStill" : "Fade In Still",
+					"fadeInLeft" : "Fade In Left",
+					"fadeInRight" : "Fade In Right",
+					"fadeInDown" : "Fade In Down",
+					"fadeInTop" : "Fade In Top",
+					"spinFadeIn" : "Spin Fade In"
+				}
+			},
+			"zoomRotate" : {
+				"title" : "Zoom and Rotate",
+				"options" : {
+					"reset" : "Reset"
+				}
+			},
+			"music" : {
+				"title" : "Background Music",
+				"options" : {
+					"nowPlaying" : "Now Playing"
+				}
+			},
+			"information" : {
+				"title" : "Information",
+				"options" : {
+					"title" : "Title",
+					"createdDate" : "Created Date",
+					"format" : "Format",
+					"size" : "Size",
+					"resolution" : "Resolution",
+					"location" : "Location"
+				}
+			}
+		}
+	},
+	"audioPlayer" : {
+		"tooltip" : {
+			"play" : "Play",
+			"pause" : "Pause",
+			"previous" : "Prev",
+			"next" : "Next",
+			"repeat" : "Repeat",
+			"repeatOne" : "Repeat One",
+			"repeatOff" : "Repeat Off",
+			"shuffle" : "Shuffle",
+			"shuffleOff" : "Shuffle Off",
+			"setting" : "Setting"
+		},
+		"error" : {
+			"aborted" : {
+				"title" : "Media Aborted",
+				"message" : "You aborted the Audio playback."
+			},
+			"networkError" : {
+				"title" : "Network Error",
+				"message" : "A network error caused the Audio download to fail part-way."
+			},
+			"mediaDecode" : {
+				"title" : "Error in Decoding",
+				"message" : "The Audio playback was aborted due to a corruption problem or because the Audio used features your browser did not support."
+			},
+			"srcNotSupported" : {
+				"title" : "Media not supported",
+				"message" : "The Audio playback was aborted due to a corruption problem or because the Audio used features your browser did not support."
+			},
+			"unknown" : {
+				"title" : "Unknown Error",
+				"message" : "Unknown Error occured please try again."
+			},
+			"fileError" : {
+				"title" : "Audio File Error",
+				"message" : "Can Not play the audio file please check the file format OR Url."
+			}
+		},
+		"totalAudioCount" : {
+			"song" : "Song(s)"
+		}
+	},
+	"videoPlayer" : {
+		"tooltip" : {
+			"previous" : "Prev",
+			"next" : "Next",
+			"rewind" : "REW",
+			"forward" : "FF",
+			"play" : "Play",
+			"pause" : "Pause",
+			"repeatOff" : "Repeat Off",
+			"repeatOn" : "Repeat",
+			"repeatOne" : "Repeat One",
+			"setting" : "Setting"
+		},
+		"menuItem" : {
+			"pictureSize" : {
+				"title" : "Picture Size",
+				"options" : {
+					"original" : "Original",
+					"screenFit" : "Screen Fit",
+					"smartview1" : "Smartview 1",
+					"smartview2" : "Smartview 2",
+					"_16_9" : "16:9",
+					"_4_3" : "4:3"
+				}
+			},
+			"subtitle" : "Subtitle",
+			"information" : "Information"
+		},
+		"subtitle" : {
+			"title" : "Subtitle",
+			"message" : "If the subtitles are not displaying in the language you want, check the encoding setting above.",
+			"options" : {
+				"subtitleStatus" : {
+					"value" : "Subtitle",
+					"options" : {
+						"on" : "On",
+						"off" : "Off"
+					}
+				},
+				"language" : {
+					"value" : "Language"
+				}
+			}
+		},
+		"error" : {
+			"playback" : {
+				"title" : "Playback Error",
+				"message" : "You aborted the video playback. Press Next OR Prev button to play Video"
+			},
+			"network" : {
+				"title" : "Network Error",
+				"message" : "A network error caused the video download to fail part-way. Press Next OR Prev button to play Video"
+			},
+			"media" : {
+				"title" : "Media Error",
+				"message" : "The video playback was aborted due to a corruption problem or because the video used features your browser did not support. Press Next OR Prev button to play Video"
+			},
+			"unsupportedFormat" : {
+				"title" : "Unsupported Format  Error",
+				"message" : "The video could not be loaded, either because the server or network failed or because the format is not supported. Press Next OR Prev button to play Video"
+			},
+			"default" : {
+				"title" : "Unknown Error",
+				"message" : "An unknown error occurred. Press Next OR Prev button to play Video"
+			}
+		},
+		"information" : {
+			"title" : "Information",
+			"options" : {
+				"title" : "Title",
+				"duration" : "Duration",
+				"lastSaveDate" : "Last Saved Date",
+				"format" : "Format",
+				"size" : "Size",
+				"resolution" : "Resolution",
+				"location" : "Location"
+			}
+		}
+	},
+	"defaultButtons" : {
+		"ok" : "Ok",
+		"cancel" : "Cancel"
+	}
+}
