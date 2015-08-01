@@ -5,3 +5,5 @@
 
 제 6기 SW Maestro 과정
 1단계 1차 프로젝트
+
+Git Flow Test.
