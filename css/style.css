@@ -1,0 +1,18 @@
+body {
+}
+
+.main_title {
+	color: white;
+	font-size: 100px;
+	margin-left: 10%;
+	margin-top: 10%;
+}
+
+.sub_title {
+	color: white;
+	font-weight: normal;
+	font-size: 30px;
+	position: absolute;
+    left: 30%;
+    top: 70%;
+}
