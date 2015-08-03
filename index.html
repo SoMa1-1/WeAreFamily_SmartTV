@@ -19,59 +19,65 @@
 </head>
 
 <body">
-    <div data-role="page" id="one" class="type-interior" >
+    <div data-role="page" id="main" class="type-interior" >
         <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="f" >
             <h1>WE ARE FAMILY</h1>
-            <a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-right jqm-home">Home</a>
+            <a id="navi-home" href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-right jqm-home">Home</a>
         </div><!-- /header -->
 
         <div data-role="content" >
-            <div class="content-primary">
+            <div class="content-main">
             
-            	<h1 class="main_title"> 
-            		FAMILY IS <br/>
-            		THE MOST <br/>
-            		IMPORTANT <br/>
-            		THING <br/>
-            		IN THE WORLD 
-            	</h1>
+            	<div id="main_title">
+	            	<h1 class="main_title"> 
+	            		FAMILY IS <br/>
+	            		THE MOST <br/>
+	            		IMPORTANT <br/>
+	            		THING <br/>
+	            		IN THE WORLD 
+	            	</h1>
+	            	
+	            	<h1 class="sub_title"> 
+	            		Connect All Family Member <br/>
+	            		Complete Family Mission <br/>
+	            		With Analyzed Lifestyle.
+	            	</h1>
+            	</div>
+            
+            	<div id="content-black-background" style="display: none;">
+            		<div id="content-title"></div>
+            	</div>
             	
-            	<h1 class="sub_title"> 
-            		Connect All Family Member <br/>
-            		Complete Family Mission <br/>
-            		With Analyzed Lifestyle.
-            	</h1>
-            	
-            </div><!--/content-primary -->
+            </div><!--/content-main -->
 
-            <div class="content-secondary">
+            <div class="navigator">
 	            <ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="d">
-	                <li data-icon="false" style="height: 200px;"><a href="#">
-	                	<img style="margin-top: 60px; margin-left: 10px;" src="images/navi_story.png">
+	                <li id="navi-story" data-icon="false" style="height: 199px;"><a href="index.html">
+	                	<img style="margin-top: 60px; margin-left: 25px;" src="images/navi_story.png">
 	                	<h1>Story</h1>
 	                	<p> Photo Story</p></a>
 	                </li>
 	                
-	                <li data-icon="false" style="height: 200px;"><a href="#">
-	                	<img style="margin-top: 60px; margin-left: 10px;" src="images/navi_location.png">
+	                <li id="navi-location" data-icon="false" style="height: 199px;"><a href="index.html">
+	                	<img style="margin-top: 60px; margin-left: 25px;" src="images/navi_location.png">
 	                	<h1>Location</h1> 
 	                	<p> Family's location in map</p></a>
 	                </li>
 	                
-	                <li data-icon="false" style="height: 200px;"><a href="#">
-	                	<img style="margin-top: 60px; margin-left: 10px;" src="images/navi_message.png">
+	                <li id="navi-message" data-icon="false" style="height: 199px;"><a href="index.html">
+	                	<img style="margin-top: 60px; margin-left: 25px;" src="images/navi_message.png">
 	                	<h1>Message</h1> 
 	                	<p>Setting Push Condition</p></a>
 	                </li>
 	                
-	                <li data-icon="false" style="height: 200px;"><a href="#">
-	                	<img style="margin-top: 60px; margin-left: 10px;" src="images/navi_lifestyle.png">
+	                <li id="navi-lifestyle" data-icon="false" style="height: 199px;"><a href="index.html">
+	                	<img style="margin-top: 60px; margin-left: 25px;" src="images/navi_lifestyle.png">
 	                	<h1>LifeStyle</h1>
 	                	<p>With Family Daily Mission</p> </a>
 	                </li>
 	                
-	                <li data-icon="false" style="height: 200px;"><a href="#">
-	                	<img style="margin-top: 60px; margin-left: 10px;" src="images/navi_setting.png">
+	                <li id="navi-option" data-icon="false" style="height: 199px;"><a href="index.html">
+	                	<img style="margin-top: 60px; margin-left: 25px;" src="images/navi_setting.png">
 	                	<h1>Options</h1>
 	                	<p>Customize What you want</p> </a>
 	                </li>
