@@ -16,3 +16,13 @@ body {
     left: 30%;
     top: 70%;
 }
+
+#content-title {
+	color: white;
+	font-weight: bold;
+	font-size: 45px;
+	
+	position: absolute;
+    left: 3%;
+    top: 3%;
+}

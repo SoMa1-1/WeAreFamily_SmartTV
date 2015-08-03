@@ -48,7 +48,7 @@ p.intro strong {
 	font-size: .9em;
 }
 
-.type-interior .content-secondary {
+.type-interior .navigator {
 	border-right: 0;
 	border-left: 0;
 	margin: 10px -15px 0;
@@ -61,16 +61,16 @@ p.intro strong {
 .type-interior .ui-content {
 	padding-bottom: 0;
 }
-.content-secondary .ui-collapsible {
+.navigator .ui-collapsible {
 	padding: 0 15px 10px;
 
 }
-.content-secondary .ui-collapsible-content {
+.navigator .ui-collapsible-content {
 	padding: 0;
 	background: none;
 	border-bottom: none;
 }
-.content-secondary .ui-listview {
+.navigator .ui-listview {
 	margin: 0;
 }
 /* new API additions */
@@ -229,70 +229,67 @@ dd h4 { margin:15px 0 0 0; }
 		background-position: 45%;
 		overflow: hidden;
 	}
-	.content-secondary {
+	.navigator {
 		text-align: left;
 		float: left;
 		width: 20%;
 		background: none;
 	}
-	.content-secondary,
-	.type-interior .content-secondary {
+	.navigator,
+	.type-interior .navigator {
 		margin: 30px 0 20px 2%;
 		padding: 20px 4% 0 0;
 			background: none;
 					border-top: none;
 	}
-	.type-index .content-secondary {
+	.type-index .navigator {
 		padding: 0;
 	}
-	.content-secondary .ui-collapsible {
+	.navigator .ui-collapsible {
 		margin: 0;
 		padding: 0;
 	}
-	.content-secondary .ui-collapsible-content {
+	.navigator .ui-collapsible-content {
 		border: none;
 	}
-	.type-index .content-secondary .ui-listview {
+	.type-index .navigator .ui-listview {
 		margin: 0;
 	}
 
 	.ui-mobile #jqm-homeheader {
 		padding: 0;
 	}
-	.content-primary {
+	.content-main {
 		width: 45%;
 		float: right;
-		margin-top: 30px;
-		margin-right: 1%;
-		padding-right: 1%;
 	}
-	.content-primary ul:first-child {
+	.content-main ul:first-child {
 		margin-top: 0;
 	}
-	.content-secondary h2 {
+	.navigator h2 {
 		position: absolute;
 		left: -9999px;
 	}
-	.type-interior .content-primary {
+	.type-interior .content-main {
 		margin: 0;
 	}
 	/* fix up the collapsibles - expanded on desktop */
-	.content-secondary .ui-collapsible-heading {
+	.navigator .ui-collapsible-heading {
 		display: none;
 	}
-	.content-secondary .ui-collapsible-contain {
+	.navigator .ui-collapsible-contain {
 		margin:0;
 	}
-	.content-secondary .ui-collapsible-content {
+	.navigator .ui-collapsible-content {
 		display: block;
 		margin: 0;
 		padding: 0;
 	}
-	.type-interior  .content-secondary .ui-li-divider {
+	.type-interior  .navigator .ui-li-divider {
 		padding-top: 1em;
 		padding-bottom: 1em;
 	}
-	.type-interior .content-secondary {
+	.type-interior .navigator {
 		margin: 0;
 		padding: 0;
 	}
@@ -303,12 +300,11 @@ dd h4 { margin:15px 0 0 0; }
 	.type-interior .ui-content {
 		background-position: 39%;
 	}
-	.content-secondary {
+	.navigator {
 		width: 34%;
 	}
-	.content-primary {
+	.content-main {
 		width: 56%;
-		padding-right: 1%;
 	}	
 	.type-interior .ui-content {
 		background-position: 34%;
@@ -322,26 +318,34 @@ dd h4 { margin:15px 0 0 0; }
 	.type-interior .ui-content {
 		background-position: 30%;
 	}
-	.content-secondary {
-		width: 20%;
-		height: 1000px;
-		padding-right:6%;
-		margin: 30px 0 20px 5%;
+	.navigator {
+		width: 7%;
+		height: 995px;
 	}
-	.type-interior .content-secondary {
+	.type-interior .navigator {
 		background-color: white;
 		margin: 0;
 		padding: 0;
 	}
-	.content-primary {
-		width: 70%;
-		margin-right: 5%;
-		padding-right: 3%;
-	}
-	.type-interior .content-primary {
-		width: 77%;
-		height: 1000px;
+	.type-interior .content-main {
+		width: 93%;
+		height: 995px;
 		background-image: url('https://c1.staticflickr.com/5/4059/4714974989_d0166cc6c2_b.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
+	#content-black-background {
+		position: absolute;
+		left: 3%;
+		top: 6%;
+		
+		width: 95%;
+		height: 85%;;
+		z-index: 1;
+		
+		opacity: 0.7;
+		background-color: black;
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
