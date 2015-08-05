@@ -27,6 +27,16 @@ body {
     top: 3%;
 }
 
+.date_control {
+	position: absolute;
+	left: 44%;
+	top: 7%;
+}
+
+.date_control span {
+	font-size: 25px;
+}
+
 .chart_move {
 	width: 30%;
 	height: 60%;
@@ -43,6 +53,11 @@ body {
 	position: absolute;
 	left: 32%;
 	top: 20%;
+}
+
+.chart_sleep div {
+	margin: 1%; 
+	display: inline-block;
 }
 
 .chart_phone {
@@ -71,4 +86,36 @@ body {
 .family_list > li {
 	width: 25%;
 	float: left;
+}
+
+.family_misson1 {
+	position: absolute;
+	left: 10%;
+	top: 15%;
+}
+
+.family_misson1 legend {
+	color: #106008;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+.family_misson1 span {
+	font-size: 25px;
+}
+
+.family_misson2 {
+	position: absolute;
+	left: 55%;
+	top: 15%;
+}
+
+.family_misson2 legend {
+	color: #106008;
+	font-weight: bold;
+	font-size: 40px;
+}
+
+.family_misson2 span {
+	font-size: 25px;
 }

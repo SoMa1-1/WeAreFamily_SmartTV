@@ -72,19 +72,19 @@ function naviOnClick() {
 		changePage(0);
     });
 	
-	$("#navi-story").click(function() {
+	$("#navi-location").click(function() {
 		changePage(1);
     });
 	
-	$("#navi-location").click(function() {
+	$("#navi-message").click(function() {
 		changePage(2);
     });
 	
-	$("#navi-message").click(function() {
+	$("#navi-lifestyle").click(function() {
 		changePage(3);
     });
 	
-	$("#navi-lifestyle").click(function() {
+	$("#navi-mission").click(function() {
 		changePage(4);
     });
 	
@@ -112,7 +112,7 @@ function setFocusVisible(index1,state){
 
 function changePage(index){
 	
-	var page_title = ["Main", "Story", "Location", "Message", "LifeStyle", "Options"];
+	var page_title = ["Main", "Location", "Message", "LifeStyle", "Mission", "Options"];
 	$("#section-title").text(page_title[index]);
 	
 	if(index == 0) {
@@ -126,7 +126,7 @@ function changePage(index){
 		view_stack.push(index);
 		$("#section-" + page_title[index]).fadeIn();
 		
-		if(index == 4) {
+		if(index == 3) {
 			var ctx_move = document.getElementById("canvas_move").getContext("2d");
 			var move_bar = new Chart(ctx_move).Bar(barChartData, {
 				responsive : true
@@ -148,6 +148,33 @@ function changePage(index){
 			
 			var ctx_sleep4 = document.getElementById("canvas_sleep4").getContext("2d");
 			var pie4 = new Chart(ctx_sleep4).Pie(pieData);
+			
+			$(function() {
+			    var progressbar = $( ".progressbar" ),
+			      progressLabel = $( ".progress-label" );
+			 
+			    progressbar.progressbar({
+			      value: false,
+			      change: function() {
+			        progressLabel.text( progressbar.progressbar( "value" ) + "%" );
+			      },
+			      complete: function() {
+			        progressLabel.text( "Tired...!" );
+			      }
+			    });
+			 
+			    function progress() {
+			      var val = progressbar.progressbar( "value" ) || 0;
+			 
+			      progressbar.progressbar( "value", val + 2 );
+			 
+			      if ( val < 99 ) {
+			        setTimeout( progress, 80 );
+			      }
+			    }
+			 
+			    setTimeout( progress, 2000 );
+			  });
 		}
 	}
 }

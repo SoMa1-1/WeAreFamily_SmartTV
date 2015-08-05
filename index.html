@@ -9,9 +9,11 @@
     
     <link rel="stylesheet" href="./css/jquery.mobile-1.3.2.css"/>
     <link rel="stylesheet" href="css/jqm-docs.css"/>
-    
+	<link rel="stylesheet" href="https:/code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">  
+ 
     <!--  JavaScript Libs -->
     <script type="text/javascript" src="js/lib/jquery-1.9.1.js"></script>
+     <script src="https:/code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script type="text/javascript" src="js/lib/jqm-docs.js"></script>
     <script type="text/javascript" src="js/lib/jquery.mobile-1.3.2.js"></script>
 	<script type="text/javascript" src="js/lib/TVKeyValue.js"></script>
@@ -52,13 +54,17 @@
             	<div id="content-background" style="display: none;">
             		<div id="section-title"></div>
             		
-            		<div id="section-Story" style="display: none;"></div>
-            		
             		<div id="section-Location" style="display: none;"></div>
             		
             		<div id="section-Message" style="display: none;"></div>
             		
             		<div id="section-LifeStyle" style="display: none;">
+            		
+	            		<div class="date_control" data-role="controlgroup" data-type="horizontal" data-mini="true">
+						    <a href="#" data-role="button" data-icon="arrow-l" data-iconpos="left"></a>
+						    <a href="#" data-role="button">2015. 8. 5</a>
+						    <a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right"></a>
+						</div>
             		
             			<div class="chart_move">
             				<h2 style="text-align: center;"> Move Distance </h2>
@@ -66,18 +72,18 @@
 						</div>
 						
 						<div class="chart_sleep">
-							<div style="margin: 1%; margin-bottom: 5%; display: inline-block;">
+							<div style=margin-bottom: 5%;">
 								<canvas id="canvas_sleep1" width="200" height="200"/>
 							</div>
-							<div style="margin: 1%; margin-bottom: 5%; display: inline-block;">
+							<div style="margin-bottom: 5%;">
 								<canvas id="canvas_sleep2" width="200" height="200"/>
 							</div>
 							
-							<div style="margin: 1%; display: inline-block;">
+							<div style="">
 								<canvas id="canvas_sleep3" width="200" height="200"/>
 							</div>
 							
-							<div style="margin: 1%; display: inline-block;">
+							<div style="">
 								<canvas id="canvas_sleep4" width="200" height="200"/>
 							</div>
 						</div>
@@ -93,7 +99,7 @@
 								    <li data-icon="false"><a href="#">
 								        <img src="images/icon_father.png">
 								        <h2>Father</h2>
-								        <p>Broken Bells</p></a>
+								        <div class="progressbar"><div class="progress-label"></div></div></a>
 								    </li>
 						    	</div>
 							    <div class="ui-block-b">
@@ -101,7 +107,7 @@
 								    <li data-icon="false"><a href="#">
 								        <img src="images/icon_mother.png">
 								        <h2>Mother</h2>
-								        <p>Broken Bells</p></a>
+								        <div class="progressbar"><div class="progress-label"></div></div></a>
 								    </li>
 						    	</div>
 							    <div class="ui-block-c">
@@ -109,7 +115,7 @@
 								    <li data-icon="false"><a href="#">
 								        <img src="images/icon_child.png">
 								        <h2>Son</h2>
-								        <p>Broken Bells</p></a>
+								        <div class="progressbar"><div class="progress-label"></div></div></a>
 								    </li>
 						    	</div>
 							    <div class="ui-block-d">
@@ -117,10 +123,54 @@
 								    <li data-icon="false"><a href="#">
 								        <img src="images/icon_child.png">
 								        <h2>Daughter</h2>
-								        <p>Broken Bells</p></a>
+								        <div class="progressbar"><div class="progress-label"></div></div></a>
 								    </li>
 						    	</div>
 							</div><!-- /grid-c -->
+						</div>
+            		
+            		</div>
+            		
+            		<div id="section-Mission" style="display: none;">
+            		
+            			<div class="family_misson1">
+	            			<form style="margin-bottom: 10%;">
+							    <fieldset data-role="controlgroup">
+							        <legend>라이프스타일 기반 미션. 1 </legend>
+							        <input type="checkbox" name="checkbox-t-2a" id="checkbox-t-2a" data-theme="d">
+							        <label for="checkbox-t-2a">가족미션 가족미션 가족미션 가족미션 가족미션</label>
+							        <input type="checkbox" name="checkbox-t-2b" id="checkbox-t-2b" data-theme="d">
+							        <label for="checkbox-t-2b">가족미션 가족미션 가족미션 가족미션 가족미션</label>
+							        <input type="checkbox" name="checkbox-t-2c" id="checkbox-t-2c" data-theme="d">
+							        <label for="checkbox-t-2c">가족미션 가족미션 가족미션 가족미션 가족미션</label>
+							    </fieldset>
+							</form>
+							
+							<form>
+							    <fieldset data-role="controlgroup">
+							        <legend>라이프스타일 기반 미션. 2 </legend>
+							        <input type="checkbox" name="checkbox-t-2a" id="checkbox-t-2a" data-theme="d">
+							        <label for="checkbox-t-2a">가족미션 가족미션 가족미션 가족미션 가족미션</label>
+							        <input type="checkbox" name="checkbox-t-2b" id="checkbox-t-2b" data-theme="d">
+							        <label for="checkbox-t-2b">가족미션 가족미션 가족미션 가족미션 가족미션</label>
+							        <input type="checkbox" name="checkbox-t-2c" id="checkbox-t-2c" data-theme="d">
+							        <label for="checkbox-t-2c">가족미션 가족미션 가족미션 가족미션 가족미션</label>
+							    </fieldset>
+							</form>
+						</div>
+						
+						<div class="family_misson2">
+	            			<form>
+							    <fieldset data-role="controlgroup">
+							        <legend>컨텐츠 기반 미션 1. </legend>
+							        <input type="checkbox" name="checkbox-t-2a" id="checkbox-t-2a" data-theme="d">
+							        <label for="checkbox-t-2a">가족미션 가족미션 가족미션 가족미션 가족미션</label>
+							        <input type="checkbox" name="checkbox-t-2b" id="checkbox-t-2b" data-theme="d">
+							        <label for="checkbox-t-2b">가족미션 가족미션 가족미션 가족미션 가족미션</label>
+							        <input type="checkbox" name="checkbox-t-2c" id="checkbox-t-2c" data-theme="d">
+							        <label for="checkbox-t-2c">가족미션 가족미션 가족미션 가족미션 가족미션</label>
+							    </fieldset>
+							</form>
 						</div>
             		
             		</div>
@@ -133,12 +183,6 @@
 
             <div class="navigator">
 	            <ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="d">
-	                <li id="navi-story" data-icon="false" style="height: 199px;"><a href="index.html">
-	                	<img style="margin-top: 60px; margin-left: 25px;" src="images/navi_story.png">
-	                	<h1>Story</h1>
-	                	<p> Photo Story</p></a>
-	                </li>
-	                
 	                <li id="navi-location" data-icon="false" style="height: 199px;"><a href="index.html">
 	                	<img style="margin-top: 60px; margin-left: 25px;" src="images/navi_location.png">
 	                	<h1>Location</h1> 
@@ -148,13 +192,19 @@
 	                <li id="navi-message" data-icon="false" style="height: 199px;"><a href="index.html">
 	                	<img style="margin-top: 60px; margin-left: 25px;" src="images/navi_message.png">
 	                	<h1>Message</h1> 
-	                	<p>Setting Push Condition</p></a>
+	                	<p>Setting push condition</p></a>
 	                </li>
 	                
 	                <li id="navi-lifestyle" data-icon="false" style="height: 199px;"><a href="index.html">
 	                	<img style="margin-top: 60px; margin-left: 25px;" src="images/navi_lifestyle.png">
 	                	<h1>LifeStyle</h1>
-	                	<p>With Family Daily Mission</p> </a>
+	                	<p>See your family lifestyle</p> </a>
+	                </li>
+	                
+	                <li id="navi-mission" data-icon="false" style="height: 199px;"><a href="index.html">
+	                	<img style="margin-top: 60px; margin-left: 25px;" src="images/navi_mission.png">
+	                	<h1>Mission</h1>
+	                	<p> Daily Family Misson</p></a>
 	                </li>
 	                
 	                <li id="navi-option" data-icon="false" style="height: 199px;"><a href="index.html">
