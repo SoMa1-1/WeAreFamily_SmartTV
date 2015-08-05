@@ -9,12 +9,17 @@
     
     <link rel="stylesheet" href="./css/jquery.mobile-1.3.2.css"/>
     <link rel="stylesheet" href="css/jqm-docs.css"/>
-    <script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
-    <script src="js/jqm-docs.js"></script>
-    <script type="text/javascript" src="./js/jquery.mobile-1.3.2.js"></script>
+    
+    <!--  JavaScript Libs -->
+    <script type="text/javascript" src="js/lib/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/lib/jqm-docs.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.mobile-1.3.2.js"></script>
+	<script type="text/javascript" src="js/lib/TVKeyValue.js"></script>
+	<script type="text/javascript" src="js/lib/Chart.min.js"></script>
 	
-	<script type="text/javascript" src="./lib/TVKeyValue.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/lifestyle.js"></script>
+    
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 
@@ -44,8 +49,84 @@
 	            	</h1>
             	</div>
             
-            	<div id="content-black-background" style="display: none;">
-            		<div id="content-title"></div>
+            	<div id="content-background" style="display: none;">
+            		<div id="section-title"></div>
+            		
+            		<div id="section-Story" style="display: none;"></div>
+            		
+            		<div id="section-Location" style="display: none;"></div>
+            		
+            		<div id="section-Message" style="display: none;"></div>
+            		
+            		<div id="section-LifeStyle" style="display: none;">
+            		
+            			<div class="chart_move">
+            				<h2 style="text-align: center;"> Move Distance </h2>
+							<canvas id="canvas_move" height="650" width="600"></canvas>
+						</div>
+						
+						<div class="chart_sleep">
+							<div style="margin: 1%; margin-bottom: 5%; display: inline-block;">
+								<canvas id="canvas_sleep1" width="200" height="200"/>
+							</div>
+							<div style="margin: 1%; margin-bottom: 5%; display: inline-block;">
+								<canvas id="canvas_sleep2" width="200" height="200"/>
+							</div>
+							
+							<div style="margin: 1%; display: inline-block;">
+								<canvas id="canvas_sleep3" width="200" height="200"/>
+							</div>
+							
+							<div style="margin: 1%; display: inline-block;">
+								<canvas id="canvas_sleep4" width="200" height="200"/>
+							</div>
+						</div>
+						
+						<div class="chart_phone">
+							<canvas id="canvas_phone" height="650" width="600"></canvas>
+						</div>
+						
+						<div class="family_status">
+							<div class="ui-grid-c">
+							    <div class="ui-block-a">
+							    	<ul data-role="listview" data-inset="true">
+								    <li data-icon="false"><a href="#">
+								        <img src="images/icon_father.png">
+								        <h2>Father</h2>
+								        <p>Broken Bells</p></a>
+								    </li>
+						    	</div>
+							    <div class="ui-block-b">
+								    <ul data-role="listview" data-inset="true">
+								    <li data-icon="false"><a href="#">
+								        <img src="images/icon_mother.png">
+								        <h2>Mother</h2>
+								        <p>Broken Bells</p></a>
+								    </li>
+						    	</div>
+							    <div class="ui-block-c">
+								    <ul data-role="listview" data-inset="true">
+								    <li data-icon="false"><a href="#">
+								        <img src="images/icon_child.png">
+								        <h2>Son</h2>
+								        <p>Broken Bells</p></a>
+								    </li>
+						    	</div>
+							    <div class="ui-block-d">
+								    <ul data-role="listview" data-inset="true">
+								    <li data-icon="false"><a href="#">
+								        <img src="images/icon_child.png">
+								        <h2>Daughter</h2>
+								        <p>Broken Bells</p></a>
+								    </li>
+						    	</div>
+							</div><!-- /grid-c -->
+						</div>
+            		
+            		</div>
+            		
+            		<div id="section-Options" style="display: none;"></div>
+            		
             	</div>
             	
             </div><!--/content-main -->

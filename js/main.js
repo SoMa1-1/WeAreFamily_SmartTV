@@ -1,3 +1,4 @@
+var view_stack = new Array();
 var backEventListener = null;
 
 var unregister = function() {
@@ -55,15 +56,15 @@ function naviToggle() {
 function naviFocus() {
 	$(".navigator").animate({ width: "20%" }, 250);
 	$(".content-main").animate({ width: "80%"}, 250);
-	$("#content-black-background").css('left', '22%');
-	$("#content-black-background").animate({ width: "77%" }, 250);
+	$("#content-background").css('left', '22%');
+	$("#content-background").animate({ width: "77%" }, 250);
 }
 
 function naviUnFocus() {
 	$(".navigator").animate({ width: "7%" }, 250);
 	$(".content-main").animate({ width: "93%" }, 250);
-	$("#content-black-background").css('left', '8.5%');
-	$("#content-black-background").animate({ width: "90%" }, 250);
+	$("#content-background").css('left', '8.5%');
+	$("#content-background").animate({ width: "90%" }, 250);
 }
 
 function naviOnClick() {
@@ -87,7 +88,7 @@ function naviOnClick() {
 		changePage(4);
     });
 	
-	$("#navi-setting").click(function() {
+	$("#navi-option").click(function() {
 		changePage(5);
     });
 }
@@ -110,15 +111,44 @@ function setFocusVisible(index1,state){
 }
 
 function changePage(index){
-	var page_title = ["Main", "Story", "Location", "Message", "LifeStyle", "Option"];
-	$("#content-title").text(page_title[index]);
+	
+	var page_title = ["Main", "Story", "Location", "Message", "LifeStyle", "Options"];
+	$("#section-title").text(page_title[index]);
 	
 	if(index == 0) {
-		$("#content-black-background").fadeOut();
+		$("#content-background").fadeOut();
 		$("#main_title").fadeIn();
 	} else {
 		$("#main_title").fadeOut();
-		$("#content-black-background").fadeIn();
+		$("#content-background").fadeIn();
+		$("#section-" + page_title[view_stack[view_stack.length-1]]).hide();
+		
+		view_stack.push(index);
+		$("#section-" + page_title[index]).fadeIn();
+		
+		if(index == 4) {
+			var ctx_move = document.getElementById("canvas_move").getContext("2d");
+			var move_bar = new Chart(ctx_move).Bar(barChartData, {
+				responsive : true
+			});
+			
+			var ctx_phone = document.getElementById("canvas_phone").getContext("2d");
+			var phone_line = new Chart(ctx_phone).Line(lineChartData, {
+				responsive: true
+			});
+			
+			var ctx_sleep1 = document.getElementById("canvas_sleep1").getContext("2d");
+			var pie1 = new Chart(ctx_sleep1).Pie(pieData);
+			
+			var ctx_sleep2 = document.getElementById("canvas_sleep2").getContext("2d");
+			var pie2 = new Chart(ctx_sleep2).Pie(pieData);
+			
+			var ctx_sleep3 = document.getElementById("canvas_sleep3").getContext("2d");
+			var pie3 = new Chart(ctx_sleep3).Pie(pieData);
+			
+			var ctx_sleep4 = document.getElementById("canvas_sleep4").getContext("2d");
+			var pie4 = new Chart(ctx_sleep4).Pie(pieData);
+		}
 	}
 }
 var index = 0;
