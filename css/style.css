@@ -1,6 +1,25 @@
 body {
 }
 
+#intro {
+	width: 100%;
+	height: 1080px;
+	background-color: white;
+}
+
+.intro_box {
+	position: absolute;
+	left: 35%;
+	top: 20%;
+	text-align: center;
+}
+
+.intro_brand {
+	font-weight: bold;
+	font-size: 50px;
+	color: #60A51E;
+}
+
 .main_title {
 	color: white;
 	font-size: 100px;
@@ -118,4 +137,74 @@ body {
 
 .family_misson2 span {
 	font-size: 25px;
+}
+
+.message_location {
+	position: absolute;
+	left: 3%;
+	top: 15%;
+	
+	width: 35%;
+}
+
+.message_condition {
+	position: absolute;
+	left: 43%;
+	top: 15%;
+	
+	width: 50%;
+	height: 75%;
+	
+	background-color: #C8E6C9;
+	border-radius: 15px;
+}
+
+.message_select_from {
+	margin-left: 3%;
+	margin-top: 5%;
+	
+	width: 40%;
+}
+
+.message_select_time, .message_select_event, .message_select_to, .message_select_message{
+	margin-left: 3%;
+	margin-top: 4%;
+	
+	width: 40%;
+}
+
+.option_menu1 {
+	position: absolute;
+	left: 3%;
+	top: 20%;
+	
+	width: 40%;
+	height: 60%;
+	
+	background-color: #C8E6C9;
+	border-radius: 15px;
+}
+
+.option_menu2 {
+	position: absolute;
+	left: 46%;
+	top: 20%;
+	
+	width: 40%;
+	height: 60%;
+	
+	background-color: #C8E6C9;
+	border-radius: 15px;
+}
+
+.option_menu3 {
+	position: absolute;
+	left: 89%;
+	top: 20%;
+	
+	width: 11%;
+	height: 60%;
+	
+	background-color: #C8E6C9;
+	border-radius: 15px;
 }

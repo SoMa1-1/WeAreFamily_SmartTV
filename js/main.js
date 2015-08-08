@@ -11,6 +11,12 @@ var unregister = function() {
 
 //Initialize function
 var init = function () {
+	
+	setTimeout(function() {
+		$("#intro").hide(); 
+		$("#main").css('visibility', 'visible');
+	}, 3000);
+	
     // register once
     if ( backEventListener !== null ) {
         return;
@@ -126,7 +132,35 @@ function changePage(index){
 		view_stack.push(index);
 		$("#section-" + page_title[index]).fadeIn();
 		
-		if(index == 3) {
+		if(index == 1) {
+			
+			initialize2();
+			
+			function initialize2() {
+			  var mapProp = {
+			    center:new google.maps.LatLng(51.508742,-0.120850),
+			    zoom:8,
+			    mapTypeId:google.maps.MapTypeId.ROADMAP
+			  };
+			  var map=new google.maps.Map(document.getElementById("googleMap2"), mapProp);
+			}
+			
+		} else if(index == 2) {
+			
+			initialize();
+			
+			function initialize() {
+			  var mapProp = {
+			    center:new google.maps.LatLng(51.508742,-0.120850),
+			    zoom:8,
+			    mapTypeId:google.maps.MapTypeId.ROADMAP
+			  };
+			  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+			}
+//			google.maps.event.addDomListener(window, 'load', initialize);
+				
+		} else if(index == 3) {
+			
 			var ctx_move = document.getElementById("canvas_move").getContext("2d");
 			var move_bar = new Chart(ctx_move).Bar(barChartData, {
 				responsive : true
